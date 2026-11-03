@@ -1,1 +1,840 @@
-hi
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Garg Realty Group | Dholera Smart City & Property Insights</title>
+
+<meta name="description" content="Explore Dholera Smart City, residential plots, property developments and real estate insights associated with Garg Realty Group.">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#14283d">
+
+<!-- Replace with your actual GitHub Pages URL after publishing -->
+<!-- <link rel="canonical" href="https://USERNAME.github.io/REPO/"> -->
+
+<link rel="preconnect" href="https://images.unsplash.com">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#14283d;
+  --navy2:#203c52;
+  --gold:#b58a51;
+  --cream:#f8f5ef;
+  --white:#ffffff;
+  --text:#52606b;
+}
+
+* {margin:0;padding:0;box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+  font-family:'DM Sans',sans-serif;
+  background:var(--cream);
+  color:var(--navy);
+  line-height:1.75;
+}
+
+a {text-decoration:none;color:inherit}
+
+img {display:block;width:100%;object-fit:cover}
+
+.container {
+  width:90%;
+  max-width:1180px;
+  margin:auto;
+}
+
+header {
+  background:var(--white);
+  padding:20px 0;
+  border-bottom:1px solid #eae6dd;
+}
+
+.header-inner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+}
+
+.logo {
+  font-family:'Playfair Display',serif;
+  font-size:25px;
+  font-weight:700;
+  letter-spacing:.3px;
+}
+
+.logo span {
+  display:block;
+  font:500 10px 'DM Sans',sans-serif;
+  letter-spacing:3px;
+  color:var(--gold);
+}
+
+nav {
+  display:flex;
+  gap:28px;
+  flex-wrap:wrap;
+}
+
+nav a {
+  font-size:13px;
+  font-weight:600;
+  transition:.3s;
+}
+
+nav a:hover {color:var(--gold)}
+
+.hero {
+  min-height:570px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(10,27,42,.92),
+    rgba(10,27,42,.65),rgba(10,27,42,.2)),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85')
+    center/cover;
+  color:white;
+}
+
+.hero-content {
+  max-width:710px;
+  padding:85px 0;
+}
+
+.eyebrow {
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.hero h1 {
+  font:600 clamp(37px,5vw,62px)/1.17 'Playfair Display',serif;
+  margin-bottom:24px;
+}
+
+.hero p {
+  color:#e1e4e7;
+  font-size:16px;
+  max-width:570px;
+}
+
+.hero-line {
+  width:65px;
+  height:3px;
+  background:var(--gold);
+  margin-top:30px;
+}
+
+section {padding:90px 0}
+
+.section-heading {
+  max-width:730px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+
+.section-heading h2 {
+  font:600 clamp(29px,3.5vw,42px)/1.25 'Playfair Display',serif;
+  margin-bottom:18px;
+}
+
+.section-heading p {color:var(--text)}
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:65px;
+}
+
+.about-image {
+  position:relative;
+}
+
+.about-image img {
+  height:450px;
+  border-radius:4px;
+}
+
+.about-image:after {
+  content:"";
+  position:absolute;
+  width:70%;
+  height:70%;
+  border:2px solid var(--gold);
+  right:-16px;
+  bottom:-16px;
+  z-index:-1;
+}
+
+.about-text h2 {
+  font:600 39px/1.3 'Playfair Display',serif;
+  margin-bottom:22px;
+}
+
+.about-text p {
+  color:var(--text);
+  margin-bottom:17px;
+}
+
+.text-link {
+  display:inline-block;
+  color:var(--gold);
+  font-weight:700;
+  border-bottom:1px solid var(--gold);
+  padding-bottom:4px;
+  margin-top:12px;
+}
+
+.projects {
+  background:#fff;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:26px;
+}
+
+.card {
+  background:var(--cream);
+  overflow:hidden;
+  border:1px solid #eee8de;
+  transition:transform .3s,box-shadow .3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 14px 35px rgba(0,0,0,.08);
+}
+
+.card img {
+  height:225px;
+}
+
+.card-content {padding:27px}
+
+.card-tag {
+  font-size:11px;
+  color:var(--gold);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-weight:700;
+}
+
+.card h3 {
+  font:600 24px/1.3 'Playfair Display',serif;
+  margin:12px 0;
+}
+
+.card p {
+  font-size:14px;
+  color:var(--text);
+}
+
+.card .text-link {
+  font-size:13px;
+}
+
+.feature {
+  background:var(--navy);
+  color:white;
+}
+
+.feature-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.feature h2 {
+  font:600 40px/1.25 'Playfair Display',serif;
+  margin-bottom:24px;
+}
+
+.feature p {
+  color:#d5dce2;
+  margin-bottom:18px;
+}
+
+.feature img {
+  height:400px;
+  border-radius:4px;
+}
+
+.highlights {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:35px;
+}
+
+.highlight {
+  padding:26px;
+  background:rgba(255,255,255,.07);
+  border-top:2px solid var(--gold);
+}
+
+.highlight h3 {
+  font-size:17px;
+  margin-bottom:10px;
+}
+
+.highlight p {
+  font-size:13px;
+  color:#d5dce2;
+}
+
+.insights-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
+}
+
+.insight {
+  background:white;
+  padding:32px;
+  border-left:3px solid var(--gold);
+}
+
+.insight h3 {
+  font:600 23px 'Playfair Display',serif;
+  margin-bottom:13px;
+}
+
+.insight p {
+  color:var(--text);
+  font-size:14px;
+}
+
+.insight a {
+  color:var(--gold);
+  font-weight:700;
+}
+
+.editorial {
+  background:#eae5db;
+  text-align:center;
+}
+
+.editorial .container {
+  max-width:850px;
+}
+
+.editorial h2 {
+  font:600 38px 'Playfair Display',serif;
+  margin-bottom:22px;
+}
+
+.editorial p {
+  color:var(--text);
+  margin-bottom:15px;
+}
+
+footer {
+  background:#0d1e2e;
+  color:#c4cbd1;
+  padding:55px 0 25px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:45px;
+  padding-bottom:40px;
+}
+
+footer h3 {
+  font:600 24px 'Playfair Display',serif;
+  color:white;
+  margin-bottom:15px;
+}
+
+footer p {font-size:13px;max-width:540px}
+
+footer h4 {
+  color:white;
+  margin-bottom:15px;
+}
+
+footer ul {list-style:none}
+
+footer li {margin-bottom:9px}
+
+footer a:hover {color:var(--gold)}
+
+.copyright {
+  border-top:1px solid #344351;
+  padding-top:23px;
+  text-align:center;
+  font-size:12px;
+}
+
+@media(max-width:850px) {
+  .about-grid,
+  .feature-grid,
+  .footer-grid {
+    grid-template-columns:1fr;
+  }
+
+  .cards {grid-template-columns:repeat(2,1fr)}
+
+  .highlights {grid-template-columns:1fr}
+
+  .about-image img {height:350px}
+}
+
+@media(max-width:600px) {
+  section {padding:60px 0}
+
+  .header-inner {
+    flex-direction:column;
+    text-align:center;
+  }
+
+  nav {
+    justify-content:center;
+    gap:17px;
+  }
+
+  .hero {min-height:460px}
+
+  .hero-content {padding:65px 0}
+
+  .cards,
+  .insights-grid {
+    grid-template-columns:1fr;
+  }
+
+  .feature h2,
+  .about-text h2 {
+    font-size:30px;
+  }
+
+  .feature img {height:260px}
+
+  .about-image:after {display:none}
+}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebPage",
+ "name":"Garg Realty Group - Real Estate Insights",
+ "description":"Independent informational overview of Garg Realty Group projects and real estate opportunities in Dholera.",
+ "about":{
+   "@type":"Organization",
+   "name":"Garg Realty Group",
+   "url":"https://gargrealtygroup.com/"
+ }
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">
+      GARG REALTY
+      <span>PROPERTY INSIGHTS</span>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Developments</a>
+      <a href="#dholera">Dholera</a>
+      <a href="#insights">Insights</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Real Estate & Property Insights</div>
+
+      <h1>Discover Spaces That Shape a Better Tomorrow</h1>
+
+      <p>
+        Explore thoughtfully planned property developments,
+        emerging real estate destinations and modern living
+        opportunities across India, with a special focus
+        on Dholera Smart City and residential communities.
+      </p>
+
+      <div class="hero-line"></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+        alt="Contemporary residential property with modern architecture"
+        loading="lazy">
+    </div>
+
+    <div class="about-text">
+      <div class="eyebrow">A Vision for Real Estate</div>
+
+      <h2>Building Confidence Through Thoughtful Property Development</h2>
+
+      <p>
+        Real estate represents more than the purchase of land
+        or a residential property. It is about choosing
+        locations, understanding future development and
+        identifying spaces that align with long-term goals.
+      </p>
+
+      <p>
+        Garg Realty Group traces its origins to Garg
+        Properties, established in 2007. Over the years,
+        the organisation has expanded its focus to include
+        residential developments, plotted communities
+        and lifestyle-oriented property projects.
+      </p>
+
+      <p>
+        Its portfolio includes developments in Dholera,
+        Gujarat, alongside projects associated with
+        nature-inspired living in the Himalayan region.
+      </p>
+
+      <a class="text-link"
+         href="https://gargrealtygroup.com/about"
+         target="_blank" rel="noopener">
+        Discover the Garg Realty Group Story &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Featured Developments</div>
+
+      <h2>Exploring Distinctive Real Estate Destinations</h2>
+
+      <p>
+        From planned residential plots to peaceful
+        lifestyle communities, discover developments
+        designed around different property aspirations.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=850&q=85"
+          alt="Modern residential villa architecture"
+          loading="lazy">
+
+        <div class="card-content">
+          <div class="card-tag">Dholera, Gujarat</div>
+          <h3>Sukkoon City</h3>
+
+          <p>
+            Sukkoon City is a residential villa plot
+            development associated with the evolving
+            Dholera region. It brings attention to
+            planned communities, lifestyle preferences
+            and the importance of future infrastructure.
+          </p>
+
+          <a class="text-link"
+             href="https://gargrealtygroup.com/sukkoon-city"
+             target="_blank" rel="noopener">
+            Explore Sukkoon City &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=850&q=85"
+          alt="Elegant modern residential living space"
+          loading="lazy">
+
+        <div class="card-content">
+          <div class="card-tag">Residential Plots</div>
+          <h3>Orchid Garden</h3>
+
+          <p>
+            Orchid Garden focuses on residential villa
+            plots in the Dholera area. The development
+            highlights the appeal of combining peaceful
+            surroundings with access to an emerging
+            infrastructure and urban planning ecosystem.
+          </p>
+
+          <a class="text-link"
+             href="https://gargrealtygroup.com/orchid-garden"
+             target="_blank" rel="noopener">
+            Discover Orchid Garden &rarr;
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=850&q=85"
+          alt="Beautiful hillside property surrounded by greenery"
+          loading="lazy">
+
+        <div class="card-content">
+          <div class="card-tag">Nature Inspired Living</div>
+          <h3>Himalayan Retreats</h3>
+
+          <p>
+            The hills around Pangot and Nainital offer
+            a different property experience. Mountain
+            landscapes, quieter surroundings and
+            nature-oriented lifestyles attract those
+            interested in second homes and retreats.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="dholera">
+  <div class="container">
+
+    <div class="feature-grid">
+
+      <div>
+        <div class="eyebrow">Emerging Property Destination</div>
+
+        <h2>Understanding the Future of Dholera Smart City</h2>
+
+        <p>
+          Dholera Special Investment Region in Gujarat
+          is a planned industrial and urban development
+          region associated with the Delhi-Mumbai
+          Industrial Corridor.
+        </p>
+
+        <p>
+          The region has attracted attention because
+          of its infrastructure planning, industrial
+          development initiatives and proposed
+          residential and commercial growth.
+        </p>
+
+        <p>
+          Buyers considering plots in Dholera should
+          examine project location, legal approvals,
+          land-use classification, connectivity and
+          the current status of nearby infrastructure.
+        </p>
+
+        <p>
+          Long-term property decisions benefit from
+          careful research rather than relying only
+          on future price projections.
+        </p>
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85"
+        alt="Modern urban infrastructure and commercial buildings"
+        loading="lazy">
+
+    </div>
+
+    <div class="highlights">
+
+      <div class="highlight">
+        <h3>Planned Infrastructure</h3>
+        <p>
+          Understanding transport networks, utilities
+          and infrastructure implementation is an
+          important part of evaluating developing regions.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <h3>Residential Opportunities</h3>
+        <p>
+          Residential plotted developments offer
+          different possibilities depending on
+          zoning, permissions and project specifications.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <h3>Long-Term Perspective</h3>
+        <p>
+          Property research should consider development
+          timelines, legal due diligence and individual
+          financial objectives.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="insights">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Knowledge & Guidance</div>
+
+      <h2>Useful Insights for Property Buyers</h2>
+
+      <p>
+        Explore important considerations that can help
+        prospective buyers approach real estate
+        decisions with greater awareness.
+      </p>
+    </div>
+
+    <div class="insights-grid">
+
+      <article class="insight">
+        <h3>What Should You Check Before Buying a Plot?</h3>
+        <p>
+          Before purchasing land, review ownership
+          records, permitted land use, development
+          approvals, access roads, available utilities
+          and any applicable registration requirements.
+          Independent legal verification is advisable.
+        </p>
+      </article>
+
+      <article class="insight">
+        <h3>Why Does Location Matter in Real Estate?</h3>
+        <p>
+          A property's location can influence its
+          usability, accessibility and long-term
+          desirability. Connectivity, employment
+          centres, social infrastructure and local
+          development plans all deserve attention.
+        </p>
+      </article>
+
+      <article class="insight">
+        <h3>How Do Planned Cities Influence Property Choices?</h3>
+        <p>
+          Planned urban regions may include designated
+          zones for housing, commercial activity,
+          industries and public facilities. Buyers
+          should distinguish approved plans from
+          infrastructure already completed.
+        </p>
+      </article>
+
+      <article class="insight">
+        <h3>Where Can Buyers Explore More Property Research?</h3>
+        <p>
+          Learning about local regulations, project
+          specifications and property documentation
+          helps buyers develop a more informed view.
+          Additional articles are available through
+          the
+          <a href="https://gargrealtygroup.com/blog"
+             target="_blank" rel="noopener">
+            Garg Realty Group real estate blog
+          </a>.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="editorial">
+  <div class="container">
+
+    <div class="eyebrow">A Thoughtful Approach</div>
+
+    <h2>Real Estate Decisions Begin with Reliable Information</h2>
+
+    <p>
+      Whether exploring residential plots in Dholera,
+      studying emerging infrastructure corridors or
+      learning about lifestyle properties, a well-informed
+      approach remains essential.
+    </p>
+
+    <p>
+      Researching legal documentation, understanding
+      project-specific details and comparing property
+      options can help buyers make decisions aligned
+      with their individual needs.
+    </p>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>Garg Realty | Property Insights</h3>
+        <p>
+          An informational resource exploring
+          real estate developments, planned
+          communities and property-related topics,
+          with a focus on Dholera and selected
+          residential destinations across India.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore This Website</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Our Overview</a></li>
+          <li><a href="#projects">Developments</a></li>
+          <li><a href="#dholera">Dholera Smart City</a></li>
+          <li><a href="#insights">Property Insights</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      &copy; 2026 Garg Realty Property Insights.
+      Informational website. Project details should
+      be independently verified before making
+      property decisions.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
